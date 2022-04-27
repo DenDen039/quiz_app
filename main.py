@@ -3,6 +3,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.widget import Widget
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.screenmanager import Screen,ScreenManager
 from kivy.properties import NumericProperty,ReferenceListProperty, ObjectProperty
 from  kivy.vector import Vector
 from kivy.clock import Clock
@@ -10,7 +11,7 @@ from random import randint
 import time
 Builder.load_file("QuizApp.kv")
 
-class Menu(Widget):
+class Menu(Screen):
     def GotoGameList(self):
         pass
     def GotoStats(self):
